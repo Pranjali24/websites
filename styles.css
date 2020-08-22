@@ -1,0 +1,111 @@
+body {
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+.brand {
+  font-family: "Pacifico", cursive;
+  font-size: 2em;
+  color: #fff;
+}
+.brand:hover {
+  color: #eee;
+}
+.bg-nav {
+  background-color: #000000ad;
+  color: #fff;
+}
+.brand-logo {
+  height: 3em;
+  width: 3em;
+  border-radius: 8px;
+}
+.back-image-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.332), rgba(0, 0, 0, 0.352)),
+    url("images/main-image.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.back-image-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.352)),
+    url("images/hero2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.back-image-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.352)),
+    url("images/hero3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.back-image-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.432), rgba(0, 0, 0, 0.352)),
+    url("images/hero4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.main-heading {
+  color: #fff;
+  height: 500px;
+}
+.detail {
+  width: 50%;
+  line-height: 1.7;
+  padding: 8em 3em;
+}
+.product-img {
+  width: 180px;
+  height: 270px;
+}
+/* about page */
+.about-image {
+  width: 100%;
+  height: 100%;
+}
+.line-space {
+  line-height: 1.7;
+}
+/* shop page */
+.shop-image {
+  height: 400px;
+}
+/* Blog page */
+.blog-img {
+  width: 100%;
+  height: 120px;
+}
+.post-img {
+  position: relative;
+}
+.blog-post-back {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) (0, 0, 0, 0.664), #000);
+  display: none;
+}
+.post-symbol {
+  background-color: blanchedalmond;
+  width: 2.5em;
+  /* height: 2em; */
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+.post-img:hover {
+  filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.438);
+}
+.post-img:hover + .blog-post-back {
+  display: block;
+}
+
+.post-img:hover + .blog-post-back .post-symbol {
+  display: block;
+}
