@@ -79,33 +79,38 @@ body {
   width: 100%;
   height: 120px;
 }
-.post-img {
-  position: relative;
+.blog-post-width {
+  width: 32%;
+  margin-bottom: 2em;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.418);
 }
-.blog-post-back {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5) (0, 0, 0, 0.664), #000);
-  display: none;
+.flex-property {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 1800px;
 }
-.post-symbol {
-  background-color: blanchedalmond;
-  width: 2.5em;
-  /* height: 2em; */
-  text-align: center;
-  border-radius: 50%;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s;
-}
-.post-img:hover {
-  filter: blur(2px);
-  background-color: rgba(0, 0, 0, 0.438);
-}
-.post-img:hover + .blog-post-back {
-  display: block;
+/* post page */
+.sub-blog-img {
+  width: 270px;
+  height: 200px;
+  margin-bottom: 1em;
 }
 
-.post-img:hover + .blog-post-back .post-symbol {
-  display: block;
+.sub-blog-img:hover {
+  border: 4px solid #000;
+}
+.post-text {
+  column-count: 2;
+  line-height: 2;
+}
+.social-icon {
+  color: #777;
+}
+.social-icon:hover {
+  text-decoration: none;
+  color: #222;
+}
+.mb {
+  margin-bottom: 0.195em;
 }
